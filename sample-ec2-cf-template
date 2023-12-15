@@ -1,0 +1,8 @@
+Resources:
+  Test-EC2-Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: "t2.micro"
+      AvailabilityZone: "us-east-2a"
+      KeyName: "Sameer"
+      ImageId: "ami-0e83be366243f524a"
