@@ -1,5 +1,5 @@
 Resources:
-  Test-EC2-Instance:
+  testec2instance:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: "t2.micro"
