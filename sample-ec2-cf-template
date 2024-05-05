@@ -5,4 +5,4 @@ Resources:
       InstanceType: "t2.micro"
       AvailabilityZone: "us-east-2a"
       KeyName: "Sameer"
-      ImageId: "ami-09040d770ffe2224f"
+      ImageId: "ami-0f30a9c3a48f3fa79"
