@@ -6,3 +6,6 @@ Resources:
       AvailabilityZone: "us-east-1a"
       KeyName: "Sameer"
       ImageId: "ami-04a81a99f5ec58529"
+      Tags: 
+      - Key: Name
+        Value: CF-Instance
