@@ -1,3 +1,4 @@
 #!/bin/bash
 sudo yum update
 sudo yum install httpd -y
+sudo yum install php72 php72-mysqlnd php72-imap php72-pecl-memcache php72-pecl-apcu php72-gd php72-mbstring -y
