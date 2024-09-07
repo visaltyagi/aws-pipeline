@@ -2,12 +2,12 @@ version: 0.2
 phases:
  install:
    commands:
-     - sudo yum update 
-     - sudo yum install php7.4 -y 
+     - yum update 
+     - yum install php7.4 -y 
  build:
    commands:
      - echo Build started on `date`
-     - zip hello.zip ./index.php
+     - zip index.zip ./index.php
 artifacts:
   type: 
   files:
