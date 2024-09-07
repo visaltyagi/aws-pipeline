@@ -79,7 +79,7 @@ figure {
                 </nav>
                 <article>
                   <figure>
-                    <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/aws.gif" width="1800" height="250">
+                    <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/aws.gif" width="300" height="250">
                     <div align=center>
                     <p>
                     <?php
