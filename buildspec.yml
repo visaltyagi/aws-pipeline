@@ -2,14 +2,46 @@ version: 0.2
 phases:
  install:
    commands:
-     - yum update 
-     - yum install -y amazon-linux-extras
-     - yum install php7.4 -y 
-     - yum clean metadata
-     - yum install php php-{pear,cgi,common,curl,mbstring,gd,mysqlnd,gettext,bcmath,json,xml,fpm,intl,zip,imap}
+     - |
+         export DEBIAN_FRONTEND=noninteractive
+
+         #Install php7.3
+         yum update
+         yum install -y  software-properties-common
+         LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
+         yum update
+
+         # Install PHP
+         yum install -y php7.3\
+                  php7.3-ldap \
+                  php7.3-xml \
+                  php7.3-xmlrpc \
+                  php7.3-zip \
+                  php7.3-mysql \
+                  php7.3-mbstring \
+                  php7.3-mcrypt \
+                  php7.3-gd \
+                  php7.3-readline \
+                  php7.3-opcache \
+                  php7.3-xdebug \
+                  php7.3-dom \
+                  php-xdebug \
+                  php7.3-curl \
+                  unzip
+
+         #Enable xdebug - phpunit uses this for code coverage
+         phpenmod xdebug
+
+         #Install composer
+         php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+         php composer-setup.php ;
+         php -r "unlink('composer-setup.php');" ;
+         mv composer.phar /usr/local/bin/composer
  build:
    commands:
      - echo Build started on `date`
+     - echo Installing composer deps
+     - composer install --no-progress --no-suggest
      - zip index.zip ./index.php
 artifacts:
   type: 
