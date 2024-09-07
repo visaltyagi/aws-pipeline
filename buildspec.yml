@@ -1,19 +1,18 @@
 version: 0.2
- 
 phases:
-  install:
+ install:
    commands:
      - |
          export DEBIAN_FRONTEND=noninteractive
 
-         #Install php7.1
-         yum update
-         yum install -y  software-properties-common
+         #Install php7.3
+         apt-get update
+         apt-get install -y  software-properties-common
          LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
-         yum update
+         apt-get update
 
          # Install PHP
-         yum install -y php7.3\
+         apt-get install -y php7.3\
                   php7.3-ldap \
                   php7.3-xml \
                   php7.3-xmlrpc \
@@ -38,11 +37,15 @@ phases:
          php composer-setup.php ;
          php -r "unlink('composer-setup.php');" ;
          mv composer.phar /usr/local/bin/composer
-  build:
-    commands:
-      - echo Build started on `date`
-      - zip index.zip ./index.php 
-   
+
+     # Start Mysql if you need it
+     # - apt-get install -y mysql-server
+     # - su mysql -s /bin/bash -c "/usr/sbin/mysqld" &
+ build:
+   commands:
+     - echo Build started on `date`
+     - echo Installing composer deps
+     - composer install --no-progress --no-suggest
 artifacts:
   type: 
   files:
