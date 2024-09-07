@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Intellipaat EC2 Server!</title>
+        <title>AWS DevOps EC2 Server!</title>
         <style>
             * {
 box-sizing: border-box;
@@ -65,24 +65,28 @@ figure {
 </style>
     </head>
     <body>
-        <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/1.png" alt="logo" width="100" height="42">
-        <h1 align="center">Welcome to Intellipaat!</h1>
+        <h1 align="center">Welcome to AWS DevOps!</h1>
         <header>
-                <h2>Intellipaat Server Example</h2>
+                <h2>AWS CodeDeploy Example</h2>
               </header>
               <section>
                 <nav>
                   <ul>
-                    <li><a href="https://intellipaat.com/tutorial/hadoop-tutorial/">Hadoop</a></li>
-                    <li><a href="https://intellipaat.com/tutorial/amazon-web-services-aws-tutorial/">AWS</a></li>
-                    <li><a href="https://intellipaat.com/tutorial/data-science-tutorial/">Data Science</a></li>
+                    <li><a href="https://medium.com/devops-guides/how-to-create-and-attach-the-ebs-volume-to-the-ec2-instance-ec2-assignment-2-91ff64ae80ff">AWS EBS</a></li>
+                    <li><a href="https://medium.com/devops-guides/how-to-create-efs-attach-it-to-the-ec2-instances-ec2-assignment-3-9af953930173">AWS EFS</a></li>
+                    <li><a href="https://medium.com/devops-guides/devops-capstone-project-2-automate-the-ci-cd-pipeline-without-changes-in-the-docker-containers-4bbf0486771f">DevOps Project 2 </a></li>
                   </ul>
                 </nav>
                 <article>
                   <figure>
                     <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/aws.gif" width="1800" height="250">
-                    <div align=center><p> AWS is the world’s biggest cloud provider which is owned by Amazon. They provide a set of on-demand services to the customers via the internet or “The Cloud”. Also, you get a pay-as-you-go option where you need to only pay for what you use.</p>
-                      </div>
+                    <div align=center>
+                    <p>
+                    <?php
+                      echo "AWS is the world’s biggest cloud provider which is owned by Amazon. They provide a set of on-demand services to the customers via the internet or “The Cloud”. Also, you get a pay-as-you-go option where you need to only pay for what you use";
+                    ?>
+                    </p> 
+                    </div>
                   </figure>
                 </article>
               </section>
