@@ -39,7 +39,7 @@ phases:
          mv composer.phar /usr/local/bin/composer
 
      # Start Mysql if you need it
-     - apt-get install -y mysql-server
+     - yum install -y mysql-server
      - su mysql -s /bin/bash -c "/usr/sbin/mysqld" &
  build:
    commands:
