@@ -7,13 +7,13 @@ phases:
          export DEBIAN_FRONTEND=noninteractive
 
          #Install php7.1
-         apt-get update
-         apt-get install -y  software-properties-common
+         yum update
+         yum install -y  software-properties-common
          LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
-         apt-get update
+         yum update
 
          # Install PHP
-         apt-get install -y php7.3\
+         yum install -y php7.3\
                   php7.3-ldap \
                   php7.3-xml \
                   php7.3-xmlrpc \
@@ -41,7 +41,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - zip hello.zip ./index.php 
+      - zip index.zip ./index.php 
    
 artifacts:
   type: 
