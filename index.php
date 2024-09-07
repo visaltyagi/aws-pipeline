@@ -83,7 +83,7 @@ figure {
                     <div align=center>
                     <p>
                     <?php
-                      echo "AWS is the world’s biggest cloud provider which is owned by Amazon. They provide a set of on-demand services to the customers via the internet or “The Cloud”. Also, you get a pay-as-you-go option where you need to only pay for what you use";
+                      echo "AWS is the world’s biggest cloud provider which is owned by Amazon. They provide a set of on-demand services to the customers via the internet or 'The Cloud'. Also, you get a pay-as-you-go option where you need to only pay for what you use";
                     ?>
                     </p> 
                     </div>
