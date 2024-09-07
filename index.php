@@ -80,12 +80,11 @@ figure {
                 <article>
                   <figure>
                     <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/aws.gif" width="300" height="250">
-                    <div align=center>
-                    <p>
+                    <div align="center">
+                    <h2 align="center"> AWS Demo Server Tutorial</h2>
                     <?php
                       echo "AWS is the world’s biggest cloud provider which is owned by Amazon. They provide a set of on-demand services to the customers via the internet or 'The Cloud'. Also, you get a pay-as-you-go option where you need to only pay for what you use";
                     ?>
-                    </p> 
                     </div>
                   </figure>
                 </article>
