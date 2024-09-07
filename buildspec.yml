@@ -41,7 +41,6 @@ phases:
    commands:
      - echo Build started on `date`
      - echo Installing composer deps
-     - composer install --no-progress --no-suggest
      - zip index.zip ./index.php
 artifacts:
   type: 
