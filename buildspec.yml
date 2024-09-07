@@ -1,34 +1,5 @@
 version: 0.2
 phases:
- install:
-   commands:
-     - |
-         export DEBIAN_FRONTEND=noninteractive
-
-         #Install php7.3
-         yum update
-         yum install -y  software-properties-common
-         LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
-         yum update
-
-         # Install PHP
-         yum install -y php7.3\
-                  php7.3-ldap \
-                  php7.3-xml \
-                  php7.3-xmlrpc \
-                  php7.3-zip \
-                  php7.3-mysql \
-                  php7.3-mbstring \
-                  php7.3-mcrypt \
-                  php7.3-gd \
-                  php7.3-readline \
-                  php7.3-opcache \
-                  php7.3-xdebug \
-                  php7.3-dom \
-                  php-xdebug \
-                  php7.3-curl \
-                  unzip
-      
  build:
    commands:
      - echo Build started on `date`
