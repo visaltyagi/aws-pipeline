@@ -79,7 +79,7 @@ figure {
                 </nav>
                 <article>
                   <figure>
-                    <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/aws.gif" width="300" height="250">
+                    <img src="https://raw.githubusercontent.com/Kodeedudey/AWS-DevOps-Project/master/aws.gif" width="1800" height="250">
                     <div align="center">
                     <?php
                         echo 'AWS is the world’s biggest cloud provider which is owned by Amazon. They provide a set of on-demand services to the customers via the internet or "The Cloud". Also, you get a pay-as-you-go option where you need to only pay for what you use';
