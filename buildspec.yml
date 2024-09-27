@@ -3,7 +3,7 @@ phases:
  build:
    commands:
      - echo Build started on `date`
-     - zip index.zip ./index.php
+     - zip index.zip /index.php
 artifacts:
   type: 
   files:
