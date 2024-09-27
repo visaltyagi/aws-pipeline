@@ -4,7 +4,6 @@ install:
    commands:
      - yum install -y unzip
      - yum update
-     - yum install openjdk-17-jdk -y
  build:
    commands:
      - echo Build started on `date`
