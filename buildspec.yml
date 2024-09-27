@@ -1,9 +1,6 @@
 version: 0.2
 phases:
-install:    
-   commands:
-     - yum install -y unzip
-     - yum update
+
  build:
    commands:
      - echo Build started on `date`
