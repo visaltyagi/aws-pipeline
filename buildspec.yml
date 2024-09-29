@@ -1,12 +1,11 @@
 version: 0.2
- phases:
+phases:
   build:
     commands:
       - echo Build started on `date`
-      - zip hello.zip ./index.php 
-   
+      - zip hello.zip ./index.php
 artifacts:
-  type: 
+  type: null
   files:
     - index.php
     - appspec.yml
