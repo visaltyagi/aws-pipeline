@@ -3,12 +3,12 @@ version: 0.2
   build:
     commands:
       - echo Build started on `date`
-      - zip hello.zip ./index.html 
+      - zip hello.zip ./index.php 
    
 artifacts:
   type: 
   files:
-    - index.html
+    - index.php
     - appspec.yml
     - scripts/install_dependencies
     - scripts/start_server
