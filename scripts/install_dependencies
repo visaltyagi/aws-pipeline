@@ -2,4 +2,4 @@
 sudo yum update
 sudo yum install httpd -y
 sudo yum install -y wget php-fpm php-mysqli php-json php php-devel
-sudo yum install mariadb105-server
+sudo yum install -y mariadb105-server
